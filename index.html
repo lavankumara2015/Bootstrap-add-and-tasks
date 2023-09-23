@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<style>
+    h1 {
+        text-align: center;
+        text-decoration: underline red;
+
+    }
+
+    .but {
+        padding: 10px;
+        position: relative;
+        left: 50px;
+
+    }
+
+    .but:hover {
+        background-color: rgb(135, 154, 154);
+
+
+
+
+    }
+
+    .task p {
+
+        visibility: hidden;
+
+    }
+
+    .but:hover+p {
+
+        visibility: visible;
+        transition: width 2s linear 2s;
+        box-sizing: border-box;
+        border: 2px solid black;
+
+
+    }
+
+    .task2 {
+        width: 650px;
+        height: 3vh;
+        background-color: rgb(236, 244, 244);
+        border: 1.5px solid black;
+
+    }
+
+    .task3 {
+        width: 0px;
+        height: 3vh;
+        background-color: red;
+        transition: all 2s;
+    }
+
+    .task3:hover {
+        width: 100px;
+    }
+
+    .per:hover+.task2 .task3 {
+        width: 100px;
+
+    }
+
+    .task4 {
+        width: 650px;
+        height: 3vh;
+        background-color: rgb(236, 244, 244);
+        border: 1.5px solid black;
+
+    }
+
+    .task5 {
+        width: 0px;
+        height: 3vh;
+        background-color: red;
+        transition: all 2s;
+    }
+
+    .per {
+        margin: 15px;
+        padding: 10px;
+        border: 0;
+        background-color: rgb(6, 6, 12);
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        cursor: grab;
+
+    }
+
+    .task5:hover {
+        width: 100px;
+    }
+
+    .per:hover+.task4 .task5 {
+        width: 250px;
+
+    }
+
+    .task6 {
+        width: 650px;
+        height: 3vh;
+        background-color: rgb(236, 244, 244);
+        border: 1.5px solid black;
+
+    }
+
+    .task7 {
+        width: 0px;
+        height: 3vh;
+        background-color: red;
+        transition: all 2s;
+    }
+
+
+    .per:hover+.task6 .task7 {
+        width: 450px;
+
+    }
+
+    .task8 {
+        width: 650px;
+        height: 3vh;
+        background-color: rgb(236, 244, 244);
+        border: 1.5px solid black;
+
+    }
+
+    .task9 {
+        width: 0px;
+        height: 3vh;
+        background-color: red;
+        transition: all 2s;
+    }
+
+
+
+    .per:hover+.task8 .task9 {
+        width: 650px;
+
+    }
+
+    .ver {
+
+        display: flex;
+
+
+    }
+
+    .aa {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: larger;
+        width: 250px;
+        height: 65vh;
+        background-color: rgb(213, 200, 182);
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        justify-content: space-around;
+        margin: 12px;
+
+
+    }
+</style>
+
+<body>
+    <h1>Task - 1</h1>
+
+    <div class="task">
+
+        <input type="button" value="Hover Here" class="but">
+        <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dolorem eveniet quisquam
+            error laudantium. Iusto quidem optio repellat vero qui. Modi ullam corrupti nulla? Ab neque odit tenetur
+            suscipit quis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum repudiandae delectus animi
+            reiciendis perspiciatis optio, aliquid deleniti sint soluta autem! Neque dolores nostrum id mollitia ullam
+            eligendi laborum nisi praesentium!</p>
+
+    </div>
+
+
+
+    <h1>Task 2</h1>
+    <button type="button" class="per">Percentage 15%</button>
+
+    <div class="task2">
+        <div class="task3"></div>
+
+
+    </div><br><br>
+    <button type="button" class="per">Percentage 35%</button>
+
+    <div class="task4">
+        <div class="task5"></div>
+
+
+    </div><br><br>
+
+    <button type="button" class="per">Percentage 70%</button>
+
+    <div class="task6">
+        <div class="task7"></div>
+
+
+    </div><br><br>
+
+    <button type="button" class="per">Percentage 100%</button>
+
+    <div class="task8">
+        <div class="task9"></div>
+
+
+    </div><br><br>
+
+    <h1> Task 3</h1>
+    <div class="ver">
+        <div class="aa">
+            <a href="">about </a>
+            <a href="">contact</a>
+            <a href="">search</a>
+            <a href="">Items</a>
+            <a href="">Items </a>
+            <a href="">about </a>
+            <a href="">contact</a>
+            <a href="">search</a>
+            <a href="">Items</a>
+            <a href="">Items </a>
+        </div>
+        <div id="lorem10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quidem rerum maxime,
+            asperiores amet expedita quo autem ducimus cumque porro? Quo animi sequi quod sit. Repellat unde quo eum
+            doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus adipisci doloribus neque
+            tenetur nulla voluptate placeat quibusdam nemo molestias rem, nesciunt assumenda porro aliquid in aut sunt.
+            Fugit, obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos recusandae explicabo rerum
+            quis excepturi deserunt, asperiores debitis? Atque, amet consectetur quod quaerat excepturi aliquid
+            adipisci! Odit natus nam temporibus doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolorem officia hic sint reprehenderit voluptate corrupti cum dolore, aliquam non soluta amet expedita,
+            molestias vero accusamus aliquid culpa aperiam quam asperiores!larger Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Saepe eius sit, iste veniam molestias praesentium placeat omnis laborum eaque tempore quo
+            recusandae commodi ipsa est voluptatum explicabo eum nesciunt neque? Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Commodi necessitatibus quod nemo minus consequatur dignissimos dolores ut labore
+            accusantium quis est voluptatum cupiditate fuga alias distinctio corporis, dolore maxime architecto! Lorem
+            ipsum dolor sit, amet consectetur adipisicing elit. Unde adipisci nam vel quod vitae dolor incidunt veniam,
+            sunt cumque corporis numquam, vero voluptas, recusandae blanditiis id ad nobis libero officia. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Obcaecati unde nemo ullam, eveniet, repudiandae voluptatum eius
+            excepturi aspernatur eligendi autem inventore! Nostrum cum corrupti iste repellat saepe pariatur? Assumenda,
+            optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nostrum, quasi ex facere vitae
+            velit qui est odio et, veritatis, dicta ut expedita magnam dolor neque consectetur esse laudantium
+            accusantium? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum velit sequi cumque. Corrupti
+            nemo obcaecati commodi a qui, eaque, reiciendis eius velit sequi iure facilis error autem cumque earum
+            explicabo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat amet nemo libero incidunt,
+            mollitia eaque cupiditate quasi, porro velit reprehenderit laborum ut iste blanditiis quia animi maxime
+            ipsum harum facere? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero quod eligendi accusantium
+            labore itaque tempore assumenda necessitatibus fugit? Incidunt qui dicta nihil esse dolorum, ab aperiam.
+        .</div>
+
+    </div><br><br>
+
+    <h1>Task 4</h1>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div><br><br>
+      <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+   
+</div> <br><br>
+<button type="button" class="btn btn-primary position-relative">
+    Inbox
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+      99+
+      <span class="visually-hidden">unread messages</span>
+    </span>
+  </button> <br><br>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Home</li>
+    </ol>
+  </nav>
+  
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+  </nav>
+  
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Library</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Data</li>
+    </ol>
+  </nav><br><br>
+  <button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button><br><br>
+<div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-primary">Left</button>
+    <button type="button" class="btn btn-primary">Middle</button>
+    <button type="button" class="btn btn-primary">Right</button>
+  </div><br><br>
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div><br><br>
+  <button type="button" class="btn-close" aria-label="Close"></button><br><br>
+  <p class="d-inline-flex gap-1">
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Link with href
+    </a>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      Button with data-bs-target
+    </button>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+    </div>
+  </div><br><br>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div><br><br>
+  <ul class="list-group">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+  </ul><br><br>
+  <div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav><br><br><ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+    </li>
+  </ul><br><br><br><br><nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </nav><br><br><div class="card">
+    <img src="..." class="card-img-top" alt="...">
+  
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  
+  <div class="card" aria-hidden="true">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title placeholder-glow">
+        <span class="placeholder col-6"></span>
+      </h5>
+      <p class="card-text placeholder-glow">
+        <span class="placeholder col-7"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-8"></span>
+      </p>
+      <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+    </div>
+  </div><br><br>
+  <button type="button" class="btn btn-secondary"
+        data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="This top tooltip is themed via CSS variables.">
+  Custom tooltip
+</button><br><br>
+<div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-secondary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-success" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-danger" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-warning" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-info" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-light" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-dark" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div><br><br>
+  
+
+</body>
+
+</html>
